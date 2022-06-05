@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightpink;
+}
+.processing-container{
+    display: flex;
+    justify-content: center;
+}
+div{
+    position: absolute;
+    left: 50%;
+}
+.page{
+    display: flex;
+    flex-direction: column;    
+    margin-top: 20%;
+}
+span{
+    width: 200px;
+    margin: auto;
+}
+img{
+    width:200px;
+    animation-duration: 3s;
+}
+.processing-label2{
+margin-left: 89px;
+}
+.processing-label1{
+    margin-left: 50px;
+}
+.b1{
+    animation: b1 2s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes b1 {
+    0%{
+        transform: translateX(300px);
+        opacity: 0.25;
+    }
+    50%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    80%{
+        transform: translateX(0);
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    100%{
+        transform: translateX(-300px);
+        opacity: 0.0;
+    }
+
+}
+.b2{
+    animation: b2 2s 3;
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+
+}
+@keyframes b2 {
+    0%{
+        transform: translateX(300px);
+        opacity: 0.0;
+    }
+    50%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    80%{
+        transform: translateX(0);
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    100%{
+        transform: translateX(-300px);
+        opacity: 0.0;
+    }
+
+}
+.b3{
+    animation: b3 2s 1;
+    animation-fill-mode: both;
+    animation-delay: 9s;
+
+}
+@keyframes b3 {
+    0%{
+        transform: translateY(-300px);
+        opacity: 0.0;
+    }
+    25%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(20px);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
