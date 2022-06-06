@@ -5,6 +5,10 @@
 }
 body{
     background-color: lightpink;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .processing-container{
     display: flex;
@@ -12,12 +16,10 @@ body{
 }
 div{
     position: absolute;
-    left: 50%;
 }
 .page{
     display: flex;
-    flex-direction: column;    
-    margin-top: 20%;
+    flex-direction: column;
 }
 span{
     width: 200px;
